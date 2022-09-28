@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="product.css">
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="created-product">
+                <div> 
+                    <h1 class="heading">Create product</h1>
+                </div>
+                <br>
+                <!-- <div class="form-group"><label for="Code">Product Code</label>
+                    <input type="text" id="productCode">
+                </div> -->
+                <div class="form-group"><label for="name">Name</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="form-group"><label for="size">Size</label>
+                    
+                    <select name="size" id="size">
+                        <option>XS</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                    </select>
+                </div>
+                <div class="form-group"><label for="colour">Colour</label>
+                    <input type="text" id="colour">
+                </div>
+                <div class="form-group"><label for="price">Price </label>
+                    <input type="number" id="price">
+                </div>
+                <div class="form-group"><label for="locationShop">Shop</label>
+                    <input type="adress" id="locationShop">
+                </div>
+
+                <div><button id="addProductID" onclick="addProduct()"> Add Product</button></div>
+            </div>
+            <div class="row">
+                <div class="product-area">
+                    <table class="table table-bordered table-hover" id="tbProduct">
+                        <thead class="thead_1">
+                            <tr>
+                                <th>Product Code</th>
+                                <th>Name</th>
+                                <th>Size</th>
+                                <th>Colour</th>
+                                <th>Price $ </th>
+                                <th>Shop</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="anotherPage">
+            <i title="Find Product" class="fas fa-search white"></i>
+            <a href="findProduct.html" target="_blank">
+                <h5>Find Your Favourite Block Knitted</h5> </a>
+         </div>
+       
+        <script src="product.js"></script>
+</body>
+
+</html>

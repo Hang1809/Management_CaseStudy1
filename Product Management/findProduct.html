@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Product</title>
+    
+    <style>
+       
+        .intro { 
+            max-width: 750px;
+            margin: 0px auto;
+            text-align: center;
+            background-color: #42c8d1; 
+            color: white;}
+        .cd-table-container{
+          background: #fff;
+          box-shadow: 1px 2px 26px rgba(0, 0, 0, 0.2);
+          padding: 15px;
+          max-width: 720px;
+          margin: 0px auto;
+        }
+        
+        .cd-table{
+        
+          width: 100%;
+          color: #666;
+          margin: 10px auto;
+          border-collapse: collapse;
+        }
+        
+        .cd-table tr,
+        .cd-table td{
+          border: 1px solid #ccc;
+          padding: 10px;
+        }
+        .cd-table th{
+          background: #42c8d1;
+          color: #fff;
+          padding: 10px;
+        }
+        
+        
+        .cd-search{
+          padding: 10px;
+          border: 1px solid #ccc;
+          width: 100%;
+          box-sizing: border-box;
+        }
+        
+        
+        .cd-title{
+          color: #666;
+          margin: 15px 0;
+        }
+
+        .BackHomepage {
+            max-width: 750px;
+            margin: 0px auto;
+            text-align: right;
+            background-color: #42c8d1; 
+            
+        }
+
+        </style>
+
+</head>
+<body>
+    <header class="intro">
+        <h1>  Find Your Favourite Block Knitted </h1>
+    </header>
+    <main>
+        <section class="container cd-table-container">
+            <h2 class = "cd-title">Search Table Block Knitted</h2>
+            <input type="text" id="myInput" onkeyup="myFunction()" class="cd-search table-filter" 
+            data-table="order-table" placeholder="Item to filter.."/>
+        
+        <table id="myTable" class="cd-table order-table table">
+            <thead>
+                <tr>
+                    <th>Product Code</th>
+                    <th>Name</th>
+                    <th>Colour</th>
+                    <th>Price $ </th>
+                    <th>Shop</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                
+                <tr>
+                    <td>PRD_01</td>
+                    <td>Block Knitted Craf</td>
+                    <td>Pink and Peach</td>
+                    <td>10</td>
+                    <td>Paul Smith Soho</td>
+                </tr>
+                <tr>
+                    <td>PRD_02</td>
+                    <td>Block Knitted Craf</td>
+                    <td>Pink and Peach</td>
+                    <td>10</td>
+                    <td>Paul Smith Floral Street</td>
+                </tr>
+                <tr>
+                    <td>PRD_03</td>
+                    <td>Block Knitted Cardigan</td>
+                    <td>Blue</td>
+                    <td>15</td>
+                    <td>Paul Smith No.9 </td>
+                </tr>
+                <tr>
+                    <td>PRD_04</td>
+                    <td>Block Knitted Hat</td>
+                    <td>Orange and Yellow</td>
+                    <td>12</td>
+                    <td>Paul Smith No.8</td>
+                </tr>
+                <tr>
+                    <td>PRD_05</td>
+                    <td>Block Knitted Craf</td>
+                    <td>Yellow</td>
+                    <td>12</td>
+                    <td>Paul Smith No.8 </td>
+                </tr>
+                <tr>
+                    <td>PRD_06</td>
+                    <td>Block Knitted Socks</td>
+                    <td>Orange and Yellow</td>
+                    <td>8</td>
+                    <td>Paul Smith No.5</td>
+                </tr>
+                <tr>
+                    <td>PRD_07</td>
+                    <td>Block Knitted Cardigan</td>
+                    <td>Aquamarine</td>
+                    <td>15</td>
+                    <td>Paul Smith Floral Street</td>
+                </tr>
+                <tr>
+                    <td>PRD_08</td>
+                    <td>Block Knitted Hat</td>
+                    <td>Orange and Yellow</td>
+                    <td>12</td>
+                    <td>Paul Smith Floral No.9 </td>
+                </tr>
+                <tr>
+                    <td>PRD_09</td>
+                    <td>Block Knitted Socks</td>
+                    <td>Green</td>
+                    <td>8</td>
+                    <td>Paul Smith Floral Street</td>
+                </tr>
+                <tr>
+                    <td>PRD_10</td>
+                    <td>Block Knitted Craf</td>
+                    <td>Orange and Yellow</td>
+                    <td>12</td>
+                    <td>Paul Smith Floral No.8</td>
+                </tr>
+                
+            </tbody>
+        </table>
+        </section>
+      
+            
+               
+        </div>
+        <div class="BackHomepage">
+            <a href="index.html" target="_blank">
+                <h4> Go To First Page</h4>
+         </div>
+    </main>
+    <script src="findProduct.js"></script>
+</body>
+</html>
